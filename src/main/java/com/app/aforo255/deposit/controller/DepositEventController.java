@@ -23,7 +23,7 @@ public class DepositEventController {
 
 	@Autowired
 	DepositEventProducer depositEventProducer;
-	@PostMapping("/v1/depositEvent")
+	@PostMapping("/v1/depositevent")
 	public ResponseEntity<Transaction> postLibraryEvent(@RequestBody Transaction transactionEvent) throws JsonProcessingException{
 		
 		Transaction transSql = transactionService.save(transactionEvent);

@@ -23,7 +23,7 @@ public class Transaction implements Serializable{
 	private double amount;
 	private String type;
 	private String creationDate;
-	private Integer account;
+	private Integer accountId;
 	public Integer getId() {
 		return id;
 	}
@@ -48,12 +48,13 @@ public class Transaction implements Serializable{
 	public void setCreationDate(String creationDate) {
 		this.creationDate = creationDate;
 	}
-	public Integer getAccount() {
-		return account;
+	public Integer getAccountId() {
+		return accountId;
 	}
-	public void setAccount(Integer account) {
-		this.account = account;
+	public void setAccountId(Integer accountId) {
+		this.accountId = accountId;
 	}
+	
 	
 	
 
